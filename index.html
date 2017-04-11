@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+	<link rel="icon" href="img/Ork_icon.png">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Warhammer Fiesta - Los Hereticos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +22,12 @@
 
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
-
+	
+	<!-- own styles -->
+	<link href="css/myStyle.css" rel="stylesheet" type="text/css">
+	<!-- own scripts -->
+	<script src="js/myScript.js" defer></script>
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -52,14 +58,17 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+					<li>
+						<a class="page-scroll" href="#leaderboards">Leaderboards</a>
+					</li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#gamesPlayed">Games Played</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#players">Player info</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#tactics">Army tactics</a>
                     </li>
                 </ul>
             </div>
@@ -85,9 +94,28 @@
             </div>
         </div>
     </header>
+	
+	<!-- Leaderboards Section -->
+	<section id="leaderboards" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+				<h2>Leaderboards</h2>
+			<iframe
+			src="https://docs.google.com/spreadsheets/d/1zFWrpdHewApKzsEk0uCGJvjb2yHFUKXIatfVxVThWUs/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+			id="score">
+			</iframe>
+			<br>
+			<h2>Detailed factions</h2>
+			<iframe
+			src="https://docs.google.com/spreadsheets/d/1zFWrpdHewApKzsEk0uCGJvjb2yHFUKXIatfVxVThWUs/pubhtml?gid=912943846&amp;range=A1:E42&﻿amp;single=true&amp;widget=false&chrome=false"
+			id="factions">
+			</iframe>
+            </div>
+        </div>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <!-- Games played Section -->
+    <section id="gamesPlayed" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Grayscale</h2>
@@ -98,8 +126,8 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
+    <!-- Players Section -->
+    <section id="players" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -111,8 +139,8 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <!-- Army Tactics Section -->
+    <section id="tactics" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Start Bootstrap</h2>
@@ -135,12 +163,12 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+    <!--<div id="map"></div>-->
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>Copyright &copy; Max Nelson 2017</p>
         </div>
     </footer>
 

@@ -1,0 +1,16 @@
+/*#score {
+	height: 1230px;
+	width: 1225px;
+}
+
+#factions {
+	height: 950px;
+	width: 800px;
+}*/
+#factions {
+	width: 580px;
+	height: 878px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 5px;
+}
